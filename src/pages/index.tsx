@@ -18,7 +18,8 @@ const IndexPage = () => {
       />
       <form className={"form-input"}>
         <input type="image"/>
-        <input type={"file"}/>
+          <label htmlFor="img">Select image:</label>
+          <input type="file" id="img" name="img" accept="image/*"/>
         <span>Select tag type</span>
         <select id="cars" name="cars">
           <option value="makeup">hair style</option>
