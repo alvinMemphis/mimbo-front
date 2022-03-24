@@ -1,0 +1,69 @@
+
+
+ .pageStyles  {
+  color: #232129;
+  padding: 10rem;
+  font-family: -apple-system, Roboto, sans-serif, serif;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+   form{
+     display: flex;
+     flex-direction: column;
+   }
+}
+ .headingStyles  {
+  margin-top: 0;
+  margin-bottom: 64rem;
+  max-width: 320rem;
+}
+ .headingAccentStyles  {
+  color: #663399;
+}
+ .paragraphStyles  {
+  margin-bottom: 48rem;
+}
+ .codeStyles  {
+  color: #8A6534;
+  padding: 4rem;
+  background-color: #FFF4DB;
+  font-size: 1.25rem;
+  border-radius: 4rem;
+}
+ .listStyles  {
+  margin-bottom: 96rem;
+  padding-left: 0;
+}
+ .listItemStyles  {
+  font-weight: 300;
+  font-size: 24rem;
+  max-width: 560rem;
+  margin-bottom: 30rem;
+}
+
+
+.linkStyle{
+  color: #8954A8;
+  font-weight: bold;
+  font-size: 1rem;
+  vertical-align: 5%;
+}
+@mixin button-base() {
+  @include typography(button);
+  @include ripple-surface;
+  @include ripple-radius-bounded;
+
+  display: inline-flex;
+  position: relative;
+  height: $button-height;
+  border: none;
+  vertical-align: middle;
+
+  &:hover { cursor: pointer; }
+
+  &:disabled {
+    color: $mdc-button-disabled-ink-color;
+    cursor: default;
+    pointer-events: none;
+  }
+}
