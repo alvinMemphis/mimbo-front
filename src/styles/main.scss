@@ -34,6 +34,17 @@
   margin-bottom: 96rem;
   padding-left: 0;
 }
+ .form-input{
+   padding:10rem;
+   input{
+     padding:.51rem;
+     margin:2rem;
+   }
+   select{
+     margin:1rem;
+     padding:0.5rem;
+   }
+ }
  .listItemStyles  {
   font-weight: 300;
   font-size: 24rem;
