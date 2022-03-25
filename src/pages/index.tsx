@@ -2,7 +2,7 @@ import * as React from "react"
 import '../styles/main.scss'
 import {useEffect, useState} from "react";
 import {useFetch} from "../api/fetch_hook";
-import {GET_MAKEUP, SEARCH_URL} from "../api/constants";
+import { SEARCH_URL} from "../api/constants";
 // styles
 
 
@@ -11,7 +11,8 @@ import {GET_MAKEUP, SEARCH_URL} from "../api/constants";
 const IndexPage = (props:any) => {
     let [tag_type,setTagType]= useState("hairstyle")
     let [search_key,setSearchKey]= useState("")
-    let {response ,loading}= useFetch({url: `${SEARCH_URL}?type=${tag_type}&tag=${search_key}`,options:{} })
+    let {response ,loading}:{response:any,loading:boolean}= useFetch(
+        {url:`${ SEARCH_URL }?type=${tag_type}&tag=${search_key}`,options:{} })
 
     return (
         <main className={"pageStyles"}>
@@ -31,6 +32,11 @@ const IndexPage = (props:any) => {
                 </select>
                 <input type={"text"} placeholder={"styl name"} value={search_key}
                        onChange={(e)=>setSearchKey(e.target.value)}/>
+                <ul>
+                    {response && response.map((item:any)=>{
+                        return <li>{item.name}</li>
+                    })}
+                </ul>
                 <button className={"button"} >
                     upload style
                 </button>
