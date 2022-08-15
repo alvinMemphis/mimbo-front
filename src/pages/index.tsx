@@ -16,7 +16,7 @@ const IndexPage = (props:any) => {
 
     return (
         <main className={"pageStyles"}>
-            <title>upload image</title>
+            <title>alvin mimbbo</title>
             <p>{search_key}</p>
             <img
                 alt="Gatsby G Logo"
@@ -25,6 +25,8 @@ const IndexPage = (props:any) => {
             <form className={"form-input"}>
 
                 <input type={"email"} placeholder={"example@mimbbbo.com"} value={search_key}
+                       onChange={(e)=>setSearchKey(e.target.value)}/>
+                <input type={"password"} placeholder={"password"} value={search_key}
                        onChange={(e)=>setSearchKey(e.target.value)}/>
 
                 <button className={"button"} >
