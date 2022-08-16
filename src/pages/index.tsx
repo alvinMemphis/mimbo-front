@@ -1,11 +1,12 @@
 import * as React from "react"
 import '../styles/main.scss'
-import {useEffect, useState} from "react";
+import { useState} from "react";
 import {useFetch} from "../api/fetch_hook";
 import { SEARCH_URL} from "../api/constants";
 // styles
 
-
+import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 
 // markup
 const IndexPage = (props:any) => {
@@ -37,4 +38,4 @@ const IndexPage = (props:any) => {
     )
 }
 
-export default IndexPage
+export default withAuthenticator( IndexPage)
