@@ -19,6 +19,12 @@
           "webClientId": "301viprgjch55ubgmoa8bau767",
           "nativeClientId": "301viprgjch55ubgmoa8bau767"
         }
+      },
+      "function": {
+        "users": {
+          "deploymentBucketName": "amplify-mimbofront-dev-150720-deployment",
+          "s3Key": "amplify-builds/users-5445747a2b6c5936325a-build.zip"
+        }
       }
     }
   },
