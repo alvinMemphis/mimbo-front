@@ -13,7 +13,12 @@
     },
     "categories": {
       "auth": {
-        "mimbofrontd7d4681a": {}
+        "mimbofrontdaa584f2": {
+          "userPoolId": "us-east-1_pyFsiTs1K",
+          "userPoolName": "alvin",
+          "webClientId": "301viprgjch55ubgmoa8bau767",
+          "nativeClientId": "301viprgjch55ubgmoa8bau767"
+        }
       }
     }
   },

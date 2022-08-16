@@ -4,8 +4,7 @@ import { useState} from "react";
 import {useFetch} from "../api/fetch_hook";
 import { SEARCH_URL} from "../api/constants";
 // styles
-
-import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
+import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 // markup
@@ -14,8 +13,18 @@ const IndexPage = (props:any) => {
     let [search_key,setSearchKey]= useState("")
     let {response ,loading}:{response:any,loading:boolean}= useFetch(
         {url:`${ SEARCH_URL }?type=${tag_type}&tag=${search_key}`,options:{} })
-
+    const formFields = {
+        signIn: {
+            username: {
+                labelHidden: false,
+                placeholder: 'Enter Your Email Here',
+                isRequired: true,
+                label: 'Email:'
+            },
+        },
+    }
     return (
+        <Authenticator formFields={formFields}>
         <main className={"pageStyles"}>
             <title>alvin mimbbo</title>
             <p>{search_key}</p>
@@ -35,7 +44,9 @@ const IndexPage = (props:any) => {
                 </button>
             </form>
         </main>
+
+        </Authenticator>
     )
 }
 
-export default withAuthenticator( IndexPage)
+export default ( IndexPage)
