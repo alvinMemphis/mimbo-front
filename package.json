@@ -16,6 +16,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^3.4.0",
+    "aws-amplify": "^4.3.31",
     "gatsby": "^4.10.0",
     "gatsby-plugin-sass": "^5.10.2",
     "react": "^17.0.1",

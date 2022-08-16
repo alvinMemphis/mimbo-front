@@ -1,0 +1,28 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mimbofront-dev-150720-authRole",
+      "UnauthRoleArn": "arn:aws:iam::326445141506:role/amplify-mimbofront-dev-150720-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::326445141506:role/amplify-mimbofront-dev-150720-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mimbofront-dev-150720-deployment",
+      "UnauthRoleName": "amplify-mimbofront-dev-150720-unauthRole",
+      "StackName": "amplify-mimbofront-dev-150720",
+      "StackId": "arn:aws:cloudformation:us-east-1:326445141506:stack/amplify-mimbofront-dev-150720/d421a0d0-1c92-11ed-9bd7-127af16651f7",
+      "AmplifyAppId": "d2besozzbnn671"
+    }
+  },
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mimbofront-test-112123-authRole",
+      "UnauthRoleArn": "arn:aws:iam::326445141506:role/amplify-mimbofront-test-112123-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::326445141506:role/amplify-mimbofront-test-112123-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mimbofront-test-112123-deployment",
+      "UnauthRoleName": "amplify-mimbofront-test-112123-unauthRole",
+      "StackName": "amplify-mimbofront-test-112123",
+      "StackId": "arn:aws:cloudformation:us-east-1:326445141506:stack/amplify-mimbofront-test-112123/6e5a5350-1d3c-11ed-a30a-12515979163d",
+      "AmplifyAppId": "d2besozzbnn671"
+    }
+  }
+}
